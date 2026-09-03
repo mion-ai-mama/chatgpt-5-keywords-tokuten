@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AIで人気動画を分析する方法｜コピペで使える3STEPガイド</title>
-<meta name="description" content="人気の動画をChatGPTに見せるだけで「なぜ伸びたのか」「次の企画」が分かる。AI初心者さんでもすぐ試せる3STEPガイドです。コピペで使えるプロンプト付き。">
+<title>ChatGPTの長文がパッとわかる！5つの魔法の合い言葉</title>
+<meta name="description" content="ChatGPTの長い回答を、漫画・図解・手書きノート・付箋・比較表に変える5つの合い言葉と設定方法を紹介します。">
 
 <!-- OGP（SNSでシェアされたときの表示設定） -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="AIで人気動画を分析する方法｜コピペで使える3STEPガイド">
-<meta property="og:description" content="人気の動画をChatGPTに見せるだけで「なぜ伸びたのか」「次の企画」が分かる。AI初心者さんでもすぐ試せる3STEPガイドです。">
-<meta property="og:image" content="https://mion-ai-mama.github.io/instagram-tokuten-template/assets/images/video-poster.jpg">
-<meta property="og:url" content="https://mion-ai-mama.github.io/instagram-tokuten-template/">
+<meta property="og:title" content="ChatGPTの長文がパッとわかる！5つの魔法の合い言葉">
+<meta property="og:description" content="ChatGPTの長い回答を、漫画・図解・手書きノート・付箋・比較表に変える5つの合い言葉と設定方法を紹介します。">
+<meta property="og:image" content="https://mion-ai-mama.github.io/chatgpt-5-keywords-tokuten/assets/images/chatgpt-keywords-hero.png">
+<meta property="og:url" content="https://mion-ai-mama.github.io/chatgpt-5-keywords-tokuten/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#cf8a92">
 
@@ -25,88 +25,132 @@
 <main id="main">
 
   <!-- ============================================================
-       1. ファーストビュー
+       1. OP画像（メインビジュアル。タイトル・サブコピーは画像内にあるため
+       テキストで繰り返しません。読み上げ・SEO用にh1だけ用意します）
   ============================================================ -->
-  <section class="hero" id="hero" aria-label="ページ紹介">
-    <div class="hero__inner">
-      <p class="hero__label">AI初心者さん向け</p>
-      <h1 class="hero__title">
-        AIで人気動画を<br>分析する方法
-      </h1>
-      <p class="hero__subtitle">
-        コピペで使える<br>3STEPガイド
-      </p>
-      <p class="hero__desc">
-        人気の動画をChatGPTに見せると、<br>
-        「なぜ伸びたのか」や<br>
-        「次にどんな企画を作ればいいのか」を<br>
-        初心者にも分かりやすく整理してもらえます。
-      </p>
-      <a class="btn btn--primary btn--large" href="#step1" data-scroll>
-        3STEPを見てみる
-      </a>
+  <section class="hero-image" id="hero-image" aria-label="ページ紹介">
+    <h1 class="visually-hidden">ChatGPTの長文がパッとわかる！5つの魔法の合い言葉　コピペしてすぐ使える</h1>
+    <div class="hero-image__inner">
+      <img
+        class="hero-image__img"
+        src="assets/images/chatgpt-keywords-hero.png"
+        alt="ChatGPTの長文がパッとわかる5つの魔法の合い言葉"
+        width="1680"
+        height="945">
     </div>
   </section>
 
   <!-- ============================================================
-       実例動画セクション
+       2. 導入文
   ============================================================ -->
-  <section class="section" id="example-video" aria-labelledby="example-video-heading">
+  <section class="section" id="intro" aria-labelledby="intro-heading">
     <div class="section__inner reveal">
-      <h2 class="section__heading" id="example-video-heading">実際に作った動画はこちら</h2>
-      <div class="video-card">
-        <video
-          id="example-video-player"
-          class="video-card__player"
-          controls
-          preload="none"
-          playsinline
-          poster="assets/images/video-poster.jpg"
-          aria-label="AIで動画分析を行い制作した実例動画">
-          <source src="assets/videos/example.mp4" type="video/mp4">
-          <p class="video-card__fallback">
-            動画を読み込めませんでした。ブラウザや通信環境をご確認いただくか、時間をおいて再度お試しください。
-          </p>
-        </video>
-        <p class="video-card__caption">
-          この動画は、<br>
-          人気動画の構成や見せ方をAIで分析し、<br>
-          その結果を参考に作成した実例です。<br><br>
-          元の動画をそのまま真似するのではなく、<br>
-          分析したポイントを自分の企画に応用しています。
-        </p>
+      <h2 class="section__heading" id="intro-heading">長い説明、もう頑張って全部読まなくてOK！</h2>
+      <div class="prose">
+        <p>ChatGPTは便利だけど、回答が長すぎて読むのが大変……。<br>そんなときは、最初に5つの「合い言葉」を設定しておくと便利です。</p>
+        <p>知りたい内容と一緒に合い言葉を入力するだけで、漫画や図解、手書きノート風など、パッと見て理解しやすい画像に変えられます。</p>
+        <p>難しい操作は必要ありません。<br>下の設定文をコピーして、ChatGPTに送るところから始めましょう！</p>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       3. メインプロンプト（実例動画の直後に表示）
+       3. 使い方3ステップ
   ============================================================ -->
-  <section class="section section--soft" id="main-prompt" aria-labelledby="main-prompt-heading">
+  <section class="section section--soft" id="usage-steps" aria-labelledby="usage-steps-heading">
     <div class="section__inner reveal">
-      <h2 class="section__heading" id="main-prompt-heading">この指示文をコピーして使ってください</h2>
-      <p class="section__desc">下の文章をコピーして、<br>スクショと一緒にChatGPTへ送ってください。</p>
+      <h2 class="section__heading" id="usage-steps-heading">使い方は簡単3ステップ</h2>
+      <div class="step-grid" id="usage-steps-grid">
+        <div class="step-card">
+          <p class="step-card__number">STEP 1</p>
+          <h3 class="step-card__title">設定文をコピー</h3>
+          <p class="step-card__text">下にある「設定文をコピー」ボタンを押します。</p>
+        </div>
+        <div class="step-card">
+          <p class="step-card__number">STEP 2</p>
+          <h3 class="step-card__title">ChatGPTに貼り付ける</h3>
+          <p class="step-card__text">新しいチャットを開いて、コピーした設定文をそのまま送信します。</p>
+        </div>
+        <div class="step-card">
+          <p class="step-card__number">STEP 3</p>
+          <h3 class="step-card__title">合い言葉とテーマを入力</h3>
+          <p class="step-card__text">例のように、合い言葉と知りたいテーマを一緒に送るだけです。</p>
+          <pre class="step-card__example">/manga
+NISAについて</pre>
+          <p class="step-card__text">これだけで、その形式の画像作成を依頼できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. 事前設定文
+  ============================================================ -->
+  <section class="section" id="setup-prompt" aria-labelledby="setup-prompt-heading">
+    <div class="section__inner reveal">
+      <h2 class="section__heading" id="setup-prompt-heading">最初に、この設定文を送ってね</h2>
+      <p class="section__desc">下の文章をすべてコピーして、ChatGPTの新しいチャットに貼り付けてください。</p>
 
       <div class="prompt-box">
-        <pre class="prompt-box__text" id="main-prompt-text">添付したスクショは
-YouTubeで人気の動画です。
+        <pre class="prompt-box__text" id="setup-prompt-text">これから、このチャットでは以下の5つの合い言葉を使用します。
 
-以下を分析してください。
+/manga＝内容を解説漫画にする
+/visual＝内容を1枚の図解にする
+/note＝内容を手書きノート風にまとめる
+/sticky＝内容を付箋ボード風に整理する
+/compare＝2つの内容を比較表にする
 
-・この動画が伸びた理由
-・ターゲット
-・冒頭3秒の工夫
-・構成
-・視聴維持率が高そうなポイント
-・この動画を参考にした新しい企画を10個考えてください。
+私が文章やテーマと一緒に合い言葉を入力したら、それぞれのルールに従って内容を視覚化してください。
 
-初心者にも分かるように解説してください。</pre>
+【共通ルール】
+・出力は縦長9：16の画像にする
+・すべて日本語で作成する
+・文字が小さくなりすぎないよう、情報を整理する
+・難しい言葉は、初心者にも伝わる表現に言い換える
+・元の内容にない事実や数字を勝手に追加しない
+・重要な情報を省略しすぎない
+・日本語の誤字や文字化けがないよう確認する
+・人物やイラストだけで画面を埋めず、内容がしっかり伝わる構成にする
+・ロゴ、署名、透かしは入れない
+・画像生成前の説明は不要。すぐに画像を作成する
+・合い言葉だけが入力された場合は、直前のChatGPTの回答をもとに作成する
+・元になる内容が確認できない場合のみ、画像にしたい文章やテーマを質問する
+
+【/manga】
+・内容を初心者向けの解説漫画にする
+・4〜6コマ程度を目安にする
+・縦方向だけでなく、左右にもコマを配置する
+・各コマに異なる役割を持たせる
+・会話、説明、要点、注意点をバランスよく入れる
+・人物を大きく描きすぎず、情報量と読みやすさを両立する
+
+【/visual】
+・重要なポイントを1枚の図解にまとめる
+・見出し、要点、流れがひと目で分かる構成にする
+・矢印、アイコン、図形を使って視線の流れを作る
+
+【/note】
+・手書きノート風の画像にまとめる
+・見出し、箇条書き、囲み、下線を使って整理する
+・ノートらしい温かさを残しながら、文字を読みやすくする
+
+【/sticky】
+・内容を複数の付箋に分けて整理する
+・カテゴリーごとに付箋の色を変える
+・情報同士の関係が分かるボード形式にする
+
+【/compare】
+・2つの内容を左右に分けて比較する
+・共通する比較項目をそろえる
+・違い、向いている人、メリット、注意点が分かる表にする
+
+このチャットでは、以後このルールで合い言葉を解釈してください。</pre>
         <button
           type="button"
           class="btn btn--primary copy-btn"
-          data-copy-target="main-prompt-text"
-          aria-label="メインプロンプトの指示文をコピーする">
-          <span class="copy-btn__label">この指示文をコピーする</span>
+          data-copy-target="setup-prompt-text"
+          aria-label="設定文をコピーする">
+          <span class="copy-btn__label">設定文をコピーする</span>
           <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
         </button>
       </div>
@@ -114,137 +158,102 @@ YouTubeで人気の動画です。
   </section>
 
   <!-- ============================================================
-       4〜6. STEP（steps-container の中身は js/content.js の steps
-       配列から自動生成されます。ここにあるHTMLは、JavaScriptが
-       読み込めなかった場合に表示される初期表示用です）
+       5. 5つの合い言葉一覧
   ============================================================ -->
-  <div id="steps-container">
-    <section class="section step" id="step1" aria-labelledby="step1-heading">
-      <div class="section__inner reveal">
-        <p class="step__number">STEP 1</p>
-        <h2 class="step__title" id="step1-heading">気になる人気動画を見つける</h2>
-        <div class="prose">
-          <p>YouTubeやInstagramで、次のような動画を探しましょう。</p>
-          <ul class="check-list">
-            <li>最後まで見てしまった動画</li>
-            <li>再生回数が多い動画</li>
-            <li>コメントや反応が多い動画</li>
-            <li>自分の発信テーマに近い動画</li>
-            <li>なぜか気になって何度も見た動画</li>
-          </ul>
-          <p>そのまま真似するのではなく、「なぜ気になったのか」を考える参考として選びましょう。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--soft step" id="step2" aria-labelledby="step2-heading">
-      <div class="section__inner reveal">
-        <p class="step__number">STEP 2</p>
-        <h2 class="step__title" id="step2-heading">動画のスクショを撮る</h2>
-        <div class="prose">
-          <p>動画の流れが分かるように、3〜5枚ほどスクショを撮ります。</p>
-          <ul class="check-list">
-            <li>動画のタイトルやサムネイル</li>
-            <li>冒頭の場面</li>
-            <li>内容が大きく動く場面</li>
-            <li>途中の重要な場面</li>
-            <li>最後のまとめや案内部分</li>
-          </ul>
-        </div>
-        <div class="note-box">
-          <p class="note-box__label">補足</p>
-          <p>YouTubeのURLだけでは分析できない場合があるため、スクショを送る方法がおすすめです。</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section step" id="step3" aria-labelledby="step3-heading">
-      <div class="section__inner reveal">
-        <p class="step__number">STEP 3</p>
-        <h2 class="step__title" id="step3-heading">スクショと指示文を<br>ChatGPTに送る</h2>
-        <div class="prose">
-          <p>ChatGPTを開いたら、<br>先ほど撮ったスクショを添付します。</p>
-          <p>そのあと、<br>このページにある指示文をコピーして送ってください。</p>
-          <p>難しい設定は必要ありません。</p>
-          <p>スクショを添付して、<br>指示文を貼り付けて送るだけです。</p>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- ============================================================
-       7. 結果をよくするコツ
-  ============================================================ -->
-  <section class="section" id="tips" aria-labelledby="tips-heading">
+  <section class="section section--soft" id="keywords" aria-labelledby="keywords-heading">
     <div class="section__inner reveal">
-      <h2 class="section__heading" id="tips-heading">さらに分かりやすい答えを<br>出してもらうコツ</h2>
-      <div class="card-grid">
-        <div class="card">
-          <span class="card__icon" aria-hidden="true">📝</span>
-          <h3 class="card__title">自分の目的を伝える</h3>
-          <p class="card__desc">「Instagramリールの企画に使いたい」など、何に使いたいのかを伝えると、より目的に合った答えが出やすくなります。</p>
+      <h2 class="section__heading" id="keywords-heading">目的に合わせて使い分けよう！</h2>
+      <div class="keyword-grid" id="keywords-grid">
+        <div class="keyword-card">
+          <span class="keyword-card__icon" aria-hidden="true">🎭</span>
+          <p class="keyword-card__command">/manga</p>
+          <p class="keyword-card__reading">スラッシュ・マンガ</p>
+          <p class="keyword-card__desc">難しい内容を、会話形式の解説漫画にします。</p>
+          <p class="keyword-card__recommend"><span>おすすめ</span>制度や仕組みなど、順番に理解したい内容</p>
         </div>
-        <div class="card">
-          <span class="card__icon" aria-hidden="true">🙋</span>
-          <h3 class="card__title">誰向けかを伝える</h3>
-          <p class="card__desc">「40代・50代のAI初心者向け」など、届けたい相手を伝えると、企画の方向性が具体的になります。</p>
+        <div class="keyword-card">
+          <span class="keyword-card__icon" aria-hidden="true">📊</span>
+          <p class="keyword-card__command">/visual</p>
+          <p class="keyword-card__reading">スラッシュ・ビジュアル</p>
+          <p class="keyword-card__desc">大切なポイントを、1枚の図解にまとめます。</p>
+          <p class="keyword-card__recommend"><span>おすすめ</span>手順や全体像を、ひと目で確認したい内容</p>
         </div>
-        <div class="card">
-          <span class="card__icon" aria-hidden="true">💬</span>
-          <h3 class="card__title">難しい場合は聞き直す</h3>
-          <p class="card__desc">答えが難しいと感じたら、「もっと簡単な言葉で説明してください」と追加で伝えて大丈夫です。</p>
+        <div class="keyword-card">
+          <span class="keyword-card__icon" aria-hidden="true">📓</span>
+          <p class="keyword-card__command">/note</p>
+          <p class="keyword-card__reading">スラッシュ・ノート</p>
+          <p class="keyword-card__desc">要点を、読みやすい手書きノート風にまとめます。</p>
+          <p class="keyword-card__recommend"><span>おすすめ</span>覚えておきたいコツやチェックポイント</p>
+        </div>
+        <div class="keyword-card">
+          <span class="keyword-card__icon" aria-hidden="true">🗒️</span>
+          <p class="keyword-card__command">/sticky</p>
+          <p class="keyword-card__reading">スラッシュ・スティッキー</p>
+          <p class="keyword-card__desc">バラバラな情報を、付箋ボード風に整理します。</p>
+          <p class="keyword-card__recommend"><span>おすすめ</span>予定、アイデア、やることの分類</p>
+        </div>
+        <div class="keyword-card">
+          <span class="keyword-card__icon" aria-hidden="true">⚖️</span>
+          <p class="keyword-card__command">/compare</p>
+          <p class="keyword-card__reading">スラッシュ・コンペア</p>
+          <p class="keyword-card__desc">2つの内容を、見やすい比較表にします。</p>
+          <p class="keyword-card__recommend"><span>おすすめ</span>違いや選び方を整理したい内容</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       8. 追加で使える質問5選
+       6. そのまま使える入力例
   ============================================================ -->
-  <section class="section section--soft" id="extra-questions" aria-labelledby="extra-questions-heading">
+  <section class="section" id="examples" aria-labelledby="examples-heading">
     <div class="section__inner reveal">
-      <h2 class="section__heading" id="extra-questions-heading">もっと深く分析したいときの<br>追加質問5選</h2>
-      <p class="section__desc">最初の分析結果を見たあと、<br>気になる質問を追加で送ってみてください。</p>
+      <h2 class="section__heading" id="examples-heading">まずは、この例で試してみてね</h2>
+      <p class="section__desc">気になる例のコピーボタンを押して、ChatGPTに貼り付けてください。</p>
 
-      <div class="question-list" id="extra-questions-list">
-        <div class="question-card">
-          <pre class="question-card__text" id="question-1">この動画が伸びた一番大きな理由を、
-初心者にも分かるように3つ教えてください。</pre>
-          <button type="button" class="btn btn--outline copy-btn" data-copy-target="question-1" aria-label="追加質問1をコピーする">
-            <span class="copy-btn__label">コピーする</span>
+      <div class="example-list" id="examples-list">
+        <div class="example-card">
+          <h3 class="example-card__title">漫画で分かりやすく</h3>
+          <pre class="example-card__text" id="example-1">/manga
+NISAについて、仕組みやメリット、注意点を初心者にも分かるように説明して</pre>
+          <button type="button" class="btn btn--outline copy-btn" data-copy-target="example-1" aria-label="漫画で分かりやすくの例をコピーする">
+            <span class="copy-btn__label">この例をコピー</span>
             <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
           </button>
         </div>
-        <div class="question-card">
-          <pre class="question-card__text" id="question-2">この動画の内容を、
-40代・50代の初心者向けに変えるとしたら、
-どのような企画になりますか？</pre>
-          <button type="button" class="btn btn--outline copy-btn" data-copy-target="question-2" aria-label="追加質問2をコピーする">
-            <span class="copy-btn__label">コピーする</span>
+        <div class="example-card">
+          <h3 class="example-card__title">1枚の図解に</h3>
+          <pre class="example-card__text" id="example-2">/visual
+AIでおうちワークを始める5ステップ</pre>
+          <button type="button" class="btn btn--outline copy-btn" data-copy-target="example-2" aria-label="1枚の図解にの例をコピーする">
+            <span class="copy-btn__label">この例をコピー</span>
             <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
           </button>
         </div>
-        <div class="question-card">
-          <pre class="question-card__text" id="question-3">この動画をInstagramリールにする場合、
-30秒以内の構成を考えてください。</pre>
-          <button type="button" class="btn btn--outline copy-btn" data-copy-target="question-3" aria-label="追加質問3をコピーする">
-            <span class="copy-btn__label">コピーする</span>
+        <div class="example-card">
+          <h3 class="example-card__title">手書きノート風に</h3>
+          <pre class="example-card__text" id="example-3">/note
+ChatGPTの回答精度を上げる5つのコツ</pre>
+          <button type="button" class="btn btn--outline copy-btn" data-copy-target="example-3" aria-label="手書きノート風にの例をコピーする">
+            <span class="copy-btn__label">この例をコピー</span>
             <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
           </button>
         </div>
-        <div class="question-card">
-          <pre class="question-card__text" id="question-4">このテーマを参考にしながら、
-内容が重ならない新しい企画を10個考えてください。</pre>
-          <button type="button" class="btn btn--outline copy-btn" data-copy-target="question-4" aria-label="追加質問4をコピーする">
-            <span class="copy-btn__label">コピーする</span>
+        <div class="example-card">
+          <h3 class="example-card__title">付箋で整理</h3>
+          <pre class="example-card__text" id="example-4">/sticky
+沖縄旅行でやりたいことを「観光・グルメ・体験・買い物」に分けて整理して</pre>
+          <button type="button" class="btn btn--outline copy-btn" data-copy-target="example-4" aria-label="付箋で整理の例をコピーする">
+            <span class="copy-btn__label">この例をコピー</span>
             <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
           </button>
         </div>
-        <div class="question-card">
-          <pre class="question-card__text" id="question-5">この動画の良い部分と、
-そのまま真似しない方がよい部分を教えてください。</pre>
-          <button type="button" class="btn btn--outline copy-btn" data-copy-target="question-5" aria-label="追加質問5をコピーする">
-            <span class="copy-btn__label">コピーする</span>
+        <div class="example-card">
+          <h3 class="example-card__title">2つを比較</h3>
+          <pre class="example-card__text" id="example-5">/compare
+生成AIとAIエージェントの違い</pre>
+          <button type="button" class="btn btn--outline copy-btn" data-copy-target="example-5" aria-label="2つを比較の例をコピーする">
+            <span class="copy-btn__label">この例をコピー</span>
             <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
           </button>
         </div>
@@ -253,27 +262,134 @@ YouTubeで人気の動画です。
   </section>
 
   <!-- ============================================================
-       9. 注意点
+       7. 自分の文章を画像にする方法
   ============================================================ -->
-  <section class="section" id="caution" aria-labelledby="caution-heading">
+  <section class="section section--soft" id="self-text" aria-labelledby="self-text-heading">
     <div class="section__inner reveal">
-      <h2 class="section__heading" id="caution-heading">人気動画を参考にするときの注意点</h2>
+      <h2 class="section__heading" id="self-text-heading">ChatGPTの回答を、そのまま画像にすることもできます</h2>
       <div class="prose">
-        <p>参考にするのは、テーマの見せ方や構成、伝え方のヒントです。<br>文章・画像・動画をそのまま使うのは避け、自分らしい企画に変えていきましょう。</p>
+        <p>ChatGPTから長い回答が返ってきたあとに、合い言葉だけを送ってください。</p>
+      </div>
+      <div class="example-card">
+        <pre class="example-card__text" id="self-text-example">/manga</pre>
+        <button type="button" class="btn btn--outline copy-btn" data-copy-target="self-text-example" aria-label="合い言葉だけを送る例をコピーする">
+          <span class="copy-btn__label">この例をコピー</span>
+          <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
+        </button>
+      </div>
+      <div class="prose">
+        <p>直前の回答をもとに、漫画画像の作成を依頼できます。</p>
+        <p>ほかの形式に変えたい場合は、<br><code>/visual</code>や<code>/note</code>など、使いたい合い言葉へ変更してください。</p>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       10. 最後の案内（CTA）
+       8. うまくいかないとき（アコーディオン）
   ============================================================ -->
-  <section class="section" id="cta" aria-labelledby="cta-heading">
+  <section class="section" id="troubleshoot" aria-labelledby="troubleshoot-heading">
+    <div class="section__inner reveal">
+      <h2 class="section__heading" id="troubleshoot-heading">うまく画像にならないときは？</h2>
+      <div class="faq-list" id="troubleshoot-list">
+        <details class="faq-item">
+          <summary class="faq-item__question">合い言葉が認識されない</summary>
+          <div class="faq-item__answer">
+            <p>設定文を送ったチャットと同じチャットで使用してください。</p>
+            <p>別のチャットで使う場合は、最初に設定文をもう一度送ってください。</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">画像ではなく文章が返ってくる</summary>
+          <div class="faq-item__answer">
+            <p>次の文章を追加して送ってください。</p>
+            <pre class="faq-item__fix" id="fix-1">説明文ではなく、設定したルールに従って画像を作成してください。</pre>
+            <button type="button" class="btn btn--outline copy-btn" data-copy-target="fix-1" aria-label="追加指示文をコピーする">
+              <span class="copy-btn__label">コピーする</span>
+              <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
+            </button>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">画像の情報が少ない</summary>
+          <div class="faq-item__answer">
+            <p>次の文章を追加してください。</p>
+            <pre class="faq-item__fix" id="fix-2">人物やイラストだけで画面を埋めず、重要な情報を増やして、初心者にも内容がしっかり伝わる画像に作り直してください。</pre>
+            <button type="button" class="btn btn--outline copy-btn" data-copy-target="fix-2" aria-label="追加指示文をコピーする">
+              <span class="copy-btn__label">コピーする</span>
+              <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
+            </button>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">文字が小さすぎる</summary>
+          <div class="faq-item__answer">
+            <p>次の文章を追加してください。</p>
+            <pre class="faq-item__fix" id="fix-3">重要な内容を残しながら情報を整理し、スマートフォンでも文字が読みやすい画像に作り直してください。</pre>
+            <button type="button" class="btn btn--outline copy-btn" data-copy-target="fix-3" aria-label="追加指示文をコピーする">
+              <span class="copy-btn__label">コピーする</span>
+              <span class="copy-btn__done" role="status" aria-live="polite">コピーしました</span>
+            </button>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">内容や文字が間違っている</summary>
+          <div class="faq-item__answer">
+            <p>画像生成では、日本語の誤字や内容の間違いが発生することがあります。</p>
+            <p>間違っている箇所を具体的に伝えて、修正を依頼してください。</p>
+            <p>例：</p>
+            <pre class="faq-item__fix">「〇〇」と書かれている部分を「△△」に修正してください。それ以外のデザインや文章は変更しないでください。</pre>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       9. 注意事項
+  ============================================================ -->
+  <section class="section section--soft" id="caution" aria-labelledby="caution-heading">
+    <div class="section__inner reveal">
+      <h2 class="section__heading" id="caution-heading">使う前に知っておいてね</h2>
+      <div class="caution-box">
+        <ul class="caution-box__list">
+          <li>この5つは、ChatGPTにもともと搭載されている正式なコマンドではありません。</li>
+          <li>最初に設定文を送ることで、このチャット内だけで使える「合い言葉」として認識させています。</li>
+          <li>新しいチャットでは設定が引き継がれない場合があります。その場合は、設定文をもう一度送ってください。</li>
+          <li>同じ指示でも、毎回まったく同じ画像になるとは限りません。</li>
+          <li>画像内に誤字や不正確な内容が含まれる場合があります。完成後は必ず内容を確認してください。</li>
+          <li>お金、医療、法律などの重要な情報は、必ず公式情報や専門家の情報も確認してください。</li>
+          <li>ChatGPTの利用環境や機能によって、画像を作成できない場合があります。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       10. 最後のメッセージ
+  ============================================================ -->
+  <section class="section" id="final-message" aria-labelledby="final-message-heading">
+    <div class="section__inner reveal">
+      <div class="cta-card cta-card--secondary">
+        <h2 class="cta-card__heading" id="final-message-heading">合い言葉で、ChatGPTをもっと見やすく！</h2>
+        <div class="prose">
+          <p>長い説明を読むのが大変なときは、<br>あなたが理解しやすい形に変えてみてください。</p>
+          <p>まずは気になる合い言葉をひとつ選んで、<br>実際に試してみましょう！</p>
+        </div>
+        <a class="btn btn--primary btn--large" href="#setup-prompt" data-scroll>事前設定文へ戻る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       11. 最後の案内（CTA）
+  ============================================================ -->
+  <section class="section section--soft" id="cta" aria-labelledby="cta-heading">
     <div class="section__inner reveal">
       <div class="cta-card">
         <h2 class="cta-card__heading" id="cta-heading">AIをもっと仕事や暮らしに<br>活かしてみたい方へ</h2>
         <div class="prose">
-          <p>今回紹介した方法は、<br>AIの活用法のほんの一例です。</p>
-          <p>AIを知るだけではなく、<br>実際の仕事や日々の作業にどう活かすかを知ることで、<br>できることはさらに広がります。</p>
+          <p>今回紹介した5つの合い言葉は、<br>ChatGPTを味方につける入り口のひとつです。</p>
+          <p>合い言葉を使いこなせるようになると、<br>日々の情報整理だけでなく、<br>お仕事や暮らしの中でAIを活かせる場面がどんどん広がっていきます。</p>
           <p>
             AI初心者さん向けに、<br>
             AIを仕事に活かす考え方や方法をまとめた<br>
@@ -291,7 +407,7 @@ YouTubeで人気の動画です。
 </main>
 
 <!-- ============================================================
-     11. フッター
+     12. フッター
 ============================================================ -->
 <footer class="footer">
   <p>© MION</p>
