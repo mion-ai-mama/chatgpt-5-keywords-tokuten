@@ -319,6 +319,37 @@ summary:focus-visible {
   box-shadow: 0 12px 28px -18px var(--color-card-shadow);
 }
 
+.prompt-toggle__summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  padding: 0 1.6rem 1rem 0;
+  position: relative;
+}
+
+.prompt-toggle__summary::-webkit-details-marker {
+  display: none;
+}
+
+.prompt-toggle__summary::after {
+  content: "＋ 開く";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.prompt-toggle[open] .prompt-toggle__summary {
+  padding-bottom: 1rem;
+}
+
+.prompt-toggle[open] .prompt-toggle__summary::after {
+  content: "－ たたむ";
+}
+
 .prompt-box__text,
 .example-card__text {
   font-family: inherit;
@@ -410,16 +441,13 @@ summary:focus-visible {
   box-shadow: 0 12px 28px -18px var(--color-card-shadow);
 }
 
-.keyword-card__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
+.keyword-card__preview {
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: var(--radius-md);
-  background: var(--color-accent-light);
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1.1rem;
+  box-shadow: 0 10px 22px -14px var(--color-card-shadow);
 }
 
 .keyword-card__command {

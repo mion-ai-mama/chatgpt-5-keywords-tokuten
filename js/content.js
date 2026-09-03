@@ -85,6 +85,8 @@ const CONTENT = {
   setupPrompt: {
     heading: "最初に、この設定文を送ってね",
     description: "下の文章をすべてコピーして、ChatGPTの新しいチャットに貼り付けてください。",
+    // 長文のため開閉式（<details>）にしている。この見出しをクリックすると開閉する
+    toggleLabel: "設定文の内容を確認する",
     promptText: `これから、このチャットでは以下の5つの合い言葉を使用します。
 
 /manga＝内容を解説漫画にする
@@ -149,35 +151,40 @@ const CONTENT = {
     heading: "目的に合わせて使い分けよう！",
     list: [
       {
-        icon: "🎭",
+        previewImage: "assets/images/keyword-manga-sample.png",
+        previewAlt: "/mangaで「NISAってなに？」を解説漫画にした作成例",
         command: "/manga",
         reading: "スラッシュ・マンガ",
         description: "難しい内容を、会話形式の解説漫画にします。",
         recommend: "制度や仕組みなど、順番に理解したい内容",
       },
       {
-        icon: "📊",
+        previewImage: "assets/images/keyword-visual-sample.png",
+        previewAlt: "/visualで「AIでおうちワークを始める5ステップ」を1枚の図解にした作成例",
         command: "/visual",
         reading: "スラッシュ・ビジュアル",
         description: "大切なポイントを、1枚の図解にまとめます。",
         recommend: "手順や全体像を、ひと目で確認したい内容",
       },
       {
-        icon: "📓",
+        previewImage: "assets/images/keyword-note-sample.png",
+        previewAlt: "/noteで「ChatGPTの回答精度を上げる5つのコツ」を手書きノート風にまとめた作成例",
         command: "/note",
         reading: "スラッシュ・ノート",
         description: "要点を、読みやすい手書きノート風にまとめます。",
         recommend: "覚えておきたいコツやチェックポイント",
       },
       {
-        icon: "🗒️",
+        previewImage: "assets/images/keyword-sticky-sample.png",
+        previewAlt: "/stickyで「沖縄旅行でやりたいこと」を付箋ボード風に整理した作成例",
         command: "/sticky",
         reading: "スラッシュ・スティッキー",
         description: "バラバラな情報を、付箋ボード風に整理します。",
         recommend: "予定、アイデア、やることの分類",
       },
       {
-        icon: "⚖️",
+        previewImage: "assets/images/keyword-compare-sample.png",
+        previewAlt: "/compareで「生成AIとAIエージェントの違い」を比較表にした作成例",
         command: "/compare",
         reading: "スラッシュ・コンペア",
         description: "2つの内容を、見やすい比較表にします。",

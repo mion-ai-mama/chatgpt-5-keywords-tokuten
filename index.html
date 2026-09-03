@@ -90,6 +90,8 @@ NISAについて</pre>
       <p class="section__desc">下の文章をすべてコピーして、ChatGPTの新しいチャットに貼り付けてください。</p>
 
       <div class="prompt-box">
+        <details class="prompt-toggle">
+        <summary class="prompt-toggle__summary">設定文の内容を確認する</summary>
         <pre class="prompt-box__text" id="setup-prompt-text">これから、このチャットでは以下の5つの合い言葉を使用します。
 
 /manga＝内容を解説漫画にする
@@ -143,6 +145,7 @@ NISAについて</pre>
 ・違い、向いている人、メリット、注意点が分かる表にする
 
 このチャットでは、以後このルールで合い言葉を解釈してください。</pre>
+        </details>
         <button
           type="button"
           class="btn btn--primary copy-btn"
@@ -163,35 +166,35 @@ NISAについて</pre>
       <h2 class="section__heading" id="keywords-heading">目的に合わせて使い分けよう！</h2>
       <div class="keyword-grid" id="keywords-grid">
         <div class="keyword-card">
-          <span class="keyword-card__icon" aria-hidden="true">🎭</span>
+          <img class="keyword-card__preview" src="assets/images/keyword-manga-sample.png" alt="/mangaで「NISAってなに？」を解説漫画にした作成例">
           <p class="keyword-card__command">/manga</p>
           <p class="keyword-card__reading">スラッシュ・マンガ</p>
           <p class="keyword-card__desc">難しい内容を、会話形式の解説漫画にします。</p>
           <p class="keyword-card__recommend"><span>おすすめ</span>制度や仕組みなど、順番に理解したい内容</p>
         </div>
         <div class="keyword-card">
-          <span class="keyword-card__icon" aria-hidden="true">📊</span>
+          <img class="keyword-card__preview" src="assets/images/keyword-visual-sample.png" alt="/visualで「AIでおうちワークを始める5ステップ」を1枚の図解にした作成例">
           <p class="keyword-card__command">/visual</p>
           <p class="keyword-card__reading">スラッシュ・ビジュアル</p>
           <p class="keyword-card__desc">大切なポイントを、1枚の図解にまとめます。</p>
           <p class="keyword-card__recommend"><span>おすすめ</span>手順や全体像を、ひと目で確認したい内容</p>
         </div>
         <div class="keyword-card">
-          <span class="keyword-card__icon" aria-hidden="true">📓</span>
+          <img class="keyword-card__preview" src="assets/images/keyword-note-sample.png" alt="/noteで「ChatGPTの回答精度を上げる5つのコツ」を手書きノート風にまとめた作成例">
           <p class="keyword-card__command">/note</p>
           <p class="keyword-card__reading">スラッシュ・ノート</p>
           <p class="keyword-card__desc">要点を、読みやすい手書きノート風にまとめます。</p>
           <p class="keyword-card__recommend"><span>おすすめ</span>覚えておきたいコツやチェックポイント</p>
         </div>
         <div class="keyword-card">
-          <span class="keyword-card__icon" aria-hidden="true">🗒️</span>
+          <img class="keyword-card__preview" src="assets/images/keyword-sticky-sample.png" alt="/stickyで「沖縄旅行でやりたいこと」を付箋ボード風に整理した作成例">
           <p class="keyword-card__command">/sticky</p>
           <p class="keyword-card__reading">スラッシュ・スティッキー</p>
           <p class="keyword-card__desc">バラバラな情報を、付箋ボード風に整理します。</p>
           <p class="keyword-card__recommend"><span>おすすめ</span>予定、アイデア、やることの分類</p>
         </div>
         <div class="keyword-card">
-          <span class="keyword-card__icon" aria-hidden="true">⚖️</span>
+          <img class="keyword-card__preview" src="assets/images/keyword-compare-sample.png" alt="/compareで「生成AIとAIエージェントの違い」を比較表にした作成例">
           <p class="keyword-card__command">/compare</p>
           <p class="keyword-card__reading">スラッシュ・コンペア</p>
           <p class="keyword-card__desc">2つの内容を、見やすい比較表にします。</p>

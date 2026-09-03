@@ -99,6 +99,7 @@
     if (!root || !c) return;
     root.querySelector(".section__heading").innerHTML = c.heading;
     root.querySelector(".section__desc").innerHTML = c.description;
+    root.querySelector(".prompt-toggle__summary").textContent = c.toggleLabel;
     document.getElementById("setup-prompt-text").textContent = c.promptText;
     const btn = root.querySelector(".copy-btn");
     btn.setAttribute("data-copy-target", "setup-prompt-text");
@@ -118,7 +119,7 @@
       .map(
         (k) => `
       <div class="keyword-card">
-        <span class="keyword-card__icon" aria-hidden="true">${k.icon}</span>
+        <img class="keyword-card__preview" src="${k.previewImage}" alt="${escapeHtml(k.previewAlt)}">
         <p class="keyword-card__command">${escapeHtml(k.command)}</p>
         <p class="keyword-card__reading">${k.reading}</p>
         <p class="keyword-card__desc">${k.description}</p>
